@@ -226,3 +226,101 @@ body {
   font-family: 'Inter', sans-serif;
   background-color: #f3f4f6;
 }
+
+button {
+  padding-inline: 0;
+  background-color: transparent;
+  border: none;
+  transition-duration: 0.2s;
+
+  &:active {
+    scale: 0.97;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 16px;
+  }
+}
+
+.panel-form {
+  display: flex;
+  column-gap: 12px;
+  max-width: 1080px;
+  width: 100%;
+  padding: 16px;
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 32px;
+}
+
+.panel-form__fluid {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  height: 56px;
+  padding-block: 16px;
+  border: 1px solid #edf2f7;
+  border-radius: 16px;
+}
+
+.panel-form__input-icon {
+  position: absolute;
+  left: 16px;
+}
+
+.panel-form__input {
+  flex: 1;
+  padding-inline: 48px 16px;
+  padding-block: 18px;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #6b7280;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+    border-radius: 16px;
+  }
+}
+
+.panel-form__filter-button {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #2563eb;
+  background-color: #eef2ff;
+  border-radius: 16px;
+
+  &:hover {
+    color: #eef2ff;
+    background-color: #2563eb;
+  }
+}
+
+.panel-form__download-button {
+  height: 56px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  background-color: #111827;
+  border: 1px solid #111827;
+  border-radius: 16px;
+
+  &:hover {
+    color: #111827;
+    background-color: #fff;
+  }
+}
